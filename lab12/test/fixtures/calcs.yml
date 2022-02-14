@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  input_number: 1
+  binary_input_number: MyString
+  output_number: 1
+  binary_output_number: MyString
+
+two:
+  input_number: 1
+  binary_input_number: MyString
+  output_number: 1
+  binary_output_number: MyString

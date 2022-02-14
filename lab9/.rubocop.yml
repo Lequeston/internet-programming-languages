@@ -1,0 +1,22 @@
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - bin/*
+    - config/initializers/secret_token.rb
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*

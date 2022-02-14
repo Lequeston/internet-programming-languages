@@ -1,0 +1,11 @@
+<ul>
+  <% @calcs.each do |calc| %>
+    <li>
+      <p>Введенное число = <b><%= calc.input_number %></b> его двоичный код: <b><%= calc.binary_input_number %></b> </p>
+      <p>Полученное число = <b><%= calc.output_number %></b> его двоичный код: <b><%= calc.binary_output_number %></b> </p>
+    </li>
+  <% end %>
+</ul>
+
+<%= paginate @calcs, theme: 'twitter-bootstrap-4' %>
+<%= link_to "Вернуться на главную страницу", root_url %>

@@ -1,0 +1,23 @@
+<main class="container vh-100 d-flex justify-content-center align-items-center">
+  <% if @error %>
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading">Невозможно посчитать данное значение</h4>
+
+      <p><%= @error %></p>
+
+      <hr/>
+
+      <%= link_to "Вернуться на главную", root_url %>
+    </div>
+  <% else %>
+    <div class="card shadow p-3 mb-5 bg-white rounded">
+      <div class="card-body">
+        <h5 class="card-title">Число успешно посчитанно</h5>
+
+        <p>Введенное число = <b><%= @calc.input_number %></b> его двоичный код: <b><%= @calc.binary_input_number %></b> </p>
+        <p>Полученное число = <b><%= @calc.output_number %></b> его двоичный код: <b><%= @calc.binary_output_number %></b> </p>
+        <p><%= link_to "Вернуться на главную", root_url %></p>
+      </div>
+    </div>
+  <% end %>
+</main>

@@ -1,0 +1,18 @@
+<h1>Результат</h1>
+
+<% if @error %>
+  <p><%= @error %></p>
+<% else %>
+  <table>
+    <tr>
+      <th>Номер</th>
+      <th>Значение</th>
+    </tr>
+    <%= @result.each_with_index do |r, idx| %>
+      <tr>
+        <td><%= idx + 1 %></td>
+        <td><%= r %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

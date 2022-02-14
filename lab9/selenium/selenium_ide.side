@@ -1,0 +1,76 @@
+{
+  "id": "649a86f7-4440-4b20-a43e-eb180d32a206",
+  "version": "2.0",
+  "name": "selenium-example",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "418c6dbb-3b76-456f-a03e-1c394d20bebf",
+    "name": "Test works with one word",
+    "commands": [{
+      "id": "e2f727be-fa2c-4ca9-9965-e89354cc68b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f45d63d-180c-4c73-9202-6be4ec6dad30",
+      "comment": "",
+      "command": "click",
+      "target": "id=value",
+      "targets": [
+        ["id=value", "id"],
+        ["name=value", "name"],
+        ["css=#value", "css:finder"],
+        ["xpath=//input[@id='value']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bae43e9-10d7-4579-a293-06de5d616d8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=value",
+      "targets": [
+        ["id=value", "id"],
+        ["name=value", "name"],
+        ["css=#value", "css:finder"],
+        ["xpath=//input[@id='value']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "fc9474fe-b4c3-4cca-8b3a-7923674db77f",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[@id='form']/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4476507-21ae-4466-9694-aa0217d49342",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x824",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "82f07738-3111-49f0-a8a6-4f939dfeb878",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["418c6dbb-3b76-456f-a03e-1c394d20bebf"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

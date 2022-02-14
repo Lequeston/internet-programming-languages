@@ -1,0 +1,14 @@
+<main class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+  <div>
+    <h2>Ruby on Rails</h2>
+    <p>Дано натуральное число m. Написать программу, определяющую такое натуральное число n, что двоичная запись числа n получается из двоич- ной записи числа m изменением порядка цифр на обратный порядок их следования. Например: 6 = 110 , а 3 = 011. Вывести на печать числа и их двоичное представление.</p>
+
+    <%= form_with url: calcs_url, method: :post, local: true, remote: false do |f| %>
+      <%= f.number_field :value, required: true, label: "Введите число", label_as_placeholder: true %>
+
+      <div class="d-flex justify-content-end align-items-center">
+        <%= f.submit "Отправить", class: 'btn btn-primary' %>
+      </div>
+    <% end %>
+  </div>
+</main>
